@@ -5,9 +5,9 @@ class Topic(models.Model):
     text = models.CharField(max_length=200)
     date_added = models.DateTimeField(auto_now_add=True)
 
-def __str__(self):
-    """Возвращает строковое представление модели"""
-    return self.text
+    def __str__(self):
+        """Возвращает строковое представление модели"""
+        return self.text
 
 class Entry(models.Model):
     """Информация, изученная пользователями по теме"""
